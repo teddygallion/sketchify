@@ -1,0 +1,25 @@
+body{
+	background-color:beige;
+	display:flex;
+	flex-direction: column;
+}
+
+canvas{
+	margin:auto;
+	width:70%;
+	height:60%;
+	border:1px solid black;
+	cursor:crosshair;
+	background-color:white;
+}
+main{
+	display:flex;
+	flex-direction: column;
+	align-content:flex-end;
+}
+button{
+	width:fit-content;
+	height:fit-content;
+	justify-self:center;
+	align-self: center;
+}
