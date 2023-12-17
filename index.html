@@ -8,13 +8,14 @@
 </head>
 <body>
 	<h1>Sketchify</h1>
-	<main>
-		<canvas id="myCanvas"> </canvas>
-			<input type='color' id ='color' value='#000000'></input>
-		<div id='menu'> </div>
-		<button name ='undo' id='undo' onclick="undo()"> undo</button>
-		<button name='clear-btn' id='clear-btn' onclick="clearCanvas()">clear canvas </button>
-	</main>
+		<div class="container">
+			<canvas id="canvas" height=500 width=700> </canvas>
+			<div id='toolbar'>
+				<label for='color'>Color</label>
+				<input type='color' id ='color' value='#000000'></input>
+				<button name='clear-btn' id='clear-btn'>clear canvas </button>
+			</div>
+		</div>
 	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
