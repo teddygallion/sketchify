@@ -45,14 +45,15 @@ class DrawingApp {
 		this.currentColor = newColor;
 	}
 	changeLineWidth(newLineWidth){
-		this.lineWidth = newLineWidth;
-	}
+        this.lineWidth = newLineWidth;
+        this.context.lineWidth = newLineWidth; // Update context's line width
+    }
 
 	setup(){
 		this.canvas.addEventListener('mousemove', (e) => this.watchMouse(e));
 		clearBtn.addEventListener('click', (e)=> this.clearCanvas(e));
 		colorPicker.addEventListener('change', (e)=> this.changeColor(colorPicker.value));
-		//lineWidthBtn.addEventListener('change',(e) => this.changeLineWidth(lineWidthBtn.value));
+		lineWidthBtn.addEventListener('input', (e) => this.changeLineWidth(parseInt(e.target.value)));
 		this.canvas.addEventListener('mousedown', (e) => this.startDrawing(e));
 		this.canvas.addEventListener('mousemove', (e) => this.draw(e));
 		this.canvas.addEventListener('mouseup', () => this.stopDrawing());
