@@ -3,32 +3,35 @@ body {
     padding: 0;
     height: 100%;
     width: 100%;
-    overflow: hidden;
-    background-color: darkcyan;
+    overflow:auto;
+    background: linear-gradient(#e66465, #9198e5);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
 }
 
 h1 {
-    background: #7F7FD5;
-    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
-    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
-    background-clip: text;
+    font-size: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient( #91EAE4, #86A8E7, #7F7FD5);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-self: center;
+    background-color:#202020;
 }
 
 #canvas {
     display: flex;
     cursor: crosshair;
     background-color: white;
-    margin: 10px; /* Add some margin for better appearance */
+    margin: 10px; 
 }
 
 #toolbar {
@@ -36,29 +39,33 @@ h1 {
     flex-direction: column;
     background-color: #202020;
     color: white;
-    padding: 10px; /* Add some padding for better spacing */
+    height:500px;
+    padding: 10px; 
 }
 
 #toolbar * {
-    margin-bottom: 10px; /* Adjust margin for better spacing */
+    margin-bottom: 10px; 
 }
 
 #toolbar label {
+    display:flex;
+    padding:3%;
     font-size: 12px;
+    color:white;
 }
 
 #toolbar input {
-    width: 80%; /* Adjust width to be consistent with other inputs */
+    width: 80%; 
     padding: 5px;
 }
 
 #toolbar button {
     display: flex;
     background-color: #1565c0;
-    width: 80%; /* Adjust width for better appearance */
+    width: 80%;
     border: none;
     border-radius: 4px;
     color: white;
     padding: 5px;
-    cursor: pointer; /* Add pointer cursor to indicate it's clickable */
+    cursor: pointer;
 }

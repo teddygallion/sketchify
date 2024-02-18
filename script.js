@@ -50,7 +50,6 @@ class DrawingApp {
     }
 
 	setup(){
-		this.canvas.addEventListener('mousemove', (e) => this.watchMouse(e));
 		clearBtn.addEventListener('click', (e)=> this.clearCanvas(e));
 		colorPicker.addEventListener('change', (e)=> this.changeColor(colorPicker.value));
 		lineWidthBtn.addEventListener('input', (e) => this.changeLineWidth(parseInt(e.target.value)));
